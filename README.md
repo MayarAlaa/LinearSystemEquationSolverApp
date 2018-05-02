@@ -1,0 +1,14 @@
+# LinearSystemEquationSolverApp
+An Android Application developed by Team Minions () to solve Linear Systems of two and three variables. The user takes a photo of the equations and the application gives the solution back.
+![euation with 2 variables](https://github.com/MayarAlaa/LinearSystemEquationSolverApp/blob/master/eqn2.PNG)
+             
+We used Tesseract OCR library for letters and numbers detection .In addition to that, we used OpenCV for images enhancement .
+A demo video in Arabic to describe how the application works: https://www.youtube.com/watch?v=ggjOMqFn8Fg&feature=youtu.be
+
+Possible future enhancements for the project :
+1)Work with more complex equations
+2)Work with hand-written equations
+3)Work with scrambled papers (improve image enhancement).
+This project is our participation in the 1st Computer Vision Competition held at Ain Shams University .
+
+
