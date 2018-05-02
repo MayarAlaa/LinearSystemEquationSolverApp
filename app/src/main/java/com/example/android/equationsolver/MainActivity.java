@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //A method to negate the image
     private static final int RGB_MASK = 0x00FFFFFF;
 
     public Bitmap invert(Bitmap original) {
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         return inversion;
     }
 
+    //A method to enhance the image using OpenCV
     public Bitmap processImage(Bitmap bm)
     {
                   //convert Bitmap to Mat to work with OpenCV functions
@@ -83,21 +85,18 @@ public class MainActivity extends AppCompatActivity {
 
            //convert from Mat to Bitmap to pass it to the recognzie text function
             // Android follows RGB color convention, but OpenCV follows BGR color convention
-         //   resultBitmap = Bitmap.createBitmap(image.cols(),  image.rows(),Bitmap.Config.ARGB_8888);;
+
             Imgproc.cvtColor(mat, mat, Imgproc.COLOR_RGB2GRAY, 4);
 
             Utils.matToBitmap(mat, bmp32);
 
        return bmp32;
     }
-    //private String Eq;
-    // private final String[] C;
-    // private int Deg;
-    //private final String EqHolder;
+
 
     public String Equate(String Equation) {
 
-        Pattern p1 = Pattern.compile("(-?\\d*)\\s?(X|x)?\\s?(\\+|-)\\s?(\\d+)\\s?=\\s?(-?\\d+)");  //one eqn
+        Pattern p1 = Pattern.compile("(-?\\d*)\\s?(X|x)?\\s?(\\+)?\\s?(-?\\d+)\\s?=\\s?(-?\\d+)");  //one eqn
         Pattern p2 = Pattern.compile("(-?\\d*)\\s?(X|x)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Y|y)?=\\s?(-?\\d+)\\s+(-?\\d*)\\s?(X|x)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Y|y)?=\\s?(-?\\d+)"); //two eqns
         Pattern p3 = Pattern.compile("(-?\\d*)\\s?(X|x)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Y|y)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Z|z)?=\\s?(-?\\d+)\\s+(-?\\d*)\\s?(X|x)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Y|y)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Z|z)?=\\s?(-?\\d+)\\s+(-?\\d*)\\s?(X|x)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Y|y)?\\s?(\\+|-)?\\s?(\\d*)\\s?(Z|z)?=\\s?(-?\\d+)"); //three eqns
         Matcher m1 = p1.matcher(Equation);
@@ -119,8 +118,6 @@ public class MainActivity extends AppCompatActivity {
                 a1 = Double.valueOf(m1.group(1));
 
             b1 = Double.valueOf(m1.group(4));
-//           if(m2.group(3).equals("-"))
-//                b1= -b1;
 
             c1 = Double.valueOf(m1.group(5));
 
