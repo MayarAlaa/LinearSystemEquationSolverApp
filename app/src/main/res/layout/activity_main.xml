@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/poster"
+    android:alpha="0.6">
+
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:onClick="LaunchCamera"
+        android:text="Take a photo"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnRecognize"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_below="@+id/btnCamera"
+        android:layout_marginTop="28dp"
+        android:text="Solve and Absolve"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRecognize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+         />
+        <!--android:src="@drawable/eqn"-->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="700dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFF"
+        android:textSize="25sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+         <!--/>-->
+</RelativeLayout>
