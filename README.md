@@ -11,6 +11,7 @@ Possible future enhancements for the project :
 <br>1)Work with more complex equations.</br>
 <br>2)Work with hand-written equations.</br>
 <br>3)Work with scrambled papers (improve image enhancement).</br>
+Note that our project is not completely accurate in solving but we hope to further improve it in the future.
 
 This project is our participation in the 1st Computer Vision Competition held at Ain Shams University .
 
