@@ -6,6 +6,8 @@ An Android Application developed by Team Minions (Merna Maher Ghaly - Mina Gamal
 We used **Tesseract OCR** library for letters and numbers detection . In addition to that , we used **OpenCV** for images enhancement .
 A demo video in Arabic to describe how the application works: https://www.youtube.com/watch?v=ggjOMqFn8Fg&feature=youtu.be
 
+
+
 Possible future enhancements for the project :
 -----------------------------------------------
 <br>1)Work with more complex equations.</br>
@@ -14,8 +16,7 @@ Possible future enhancements for the project :
 
 Note that our project is not completely accurate in solving but we hope to further improve it in the future.
 
-
-This project is our participation in the 1st Computer Vision Competition held at Ain Shams University .
+This project is our participation in the 1st Computer Vision Competition held at Ain Shams University.
 
 
 
