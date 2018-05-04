@@ -1,7 +1,7 @@
 # Linear System Equation Solver Android Application
 
 An Android Application developed by Team Minions (Merna Maher Ghaly - Mina Gamal Khella - Mayar Ahmed Alaa ElDin - Naira Wahied Gharieb) to solve Linear Systems of two and three variables. The user takes a photo of the equations and the application gives the solution back.
-![equation with 2 and 3 variables] (https://github.com/MayarAlaa/LinearSystemEquationSolverApp/blob/master/eqns.PNG)
+![equation with 2 and 3 variables] (/eqns.PNG)
 
 We used **Tesseract OCR** library for letters and numbers detection . In addition to that , we used **OpenCV** for images enhancement .
 A demo video in Arabic to describe how the application works: https://www.youtube.com/watch?v=ggjOMqFn8Fg&feature=youtu.be
